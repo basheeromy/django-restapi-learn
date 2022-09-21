@@ -17,7 +17,7 @@ def api_home(request,*args,**kwargs):
     else:
         data['title'] = "no data found"
 
-    return JsonResponse(data)
+    return HttpResponse(data)
     #    data = json.loads(body)
     #except:
     #data['headers'] = dict(request.headers) # use python dict function to convert headers (json object) to python dictionary.
